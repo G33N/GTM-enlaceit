@@ -1,0 +1,20 @@
+<?php
+//echo "$id";
+include ("hyfpdf.php");
+
+$pdf = new PDF();
+
+$pdf->AddPage();
+
+$pdf->logo();
+$pdf->dreparacion();
+$pdf->dcliente();
+$pdf->dauto();
+$pdf->trabajos();
+$pdf->operaciones();
+$pdf->observaciones();
+$pdf->firma();
+
+$pdf->Output(); //Salida al navegador
+?>
+
